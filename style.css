@@ -1,150 +1,155 @@
-article, aside, figure, footer, header, nav, section {
-    display: block;
-}
-/* element styles */
+/* General Reset */
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 html {
-	background-color: white;
+    background-color: white;
 }
+
 body {
-	font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 87.5%;
     width: 800px;
     min-height: 1200px;
     margin: 0 auto;
     border: 3px solid #800000;
+}
 
-}
-a:focus, a:hover {
-	font-style: italic;
-}
-/* header styles */
-header {
-	border-bottom: 3px solid #800000;
-	padding: 1.5em 0;
-	background-image: -moz-linear-gradient(
-	    30deg, #dba73f 0%, #fffded 30%, white 50%, #fffded 80%, #dba73f 100%);
-	background-image: -webkit-linear-gradient(
-	    30deg, #dba73f 0%, #fffded 30%, white 50%, #fffded 80%, #dba73f 100%);
-	background-image: -o-linear-gradient(
-	    30deg, #dba73f 0%, #fffded 30%, white 50%, #fffded 80%, #dba73f 100%);
-	background-image: linear-gradient(
-	    30deg, #dba73f 0%, #fffded 30%, white 50%, #fffded 80%, #dba73f 100%);
-}
-header h1 {
-	color: #800000;
-}
-header h2 {
-	font-style: italic;
-}
-header img {
-	float: left;
-	padding: 0 30px;
-}
-.shadow {
-	text-shadow: 2px 2px 2px #800000;
-}
-/* nav bar styling */
+/* Navigation Bar */
 nav {
-	clear: left;
-	margin: 0;
-	padding: 0;
-	border-bottom: 3px solid #800000;
+    clear: left;
+    margin: 0;
+    padding: 0;
+    background-color: #800000; /* Navigation background color */
+    border-bottom: 3px solid black;
 }
+
 nav ul {
-	margin-left: 0;
-	margin-bottom: .5em;
-	list-style: none;
-	padding: .5em 2em 0 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: space-between; /* Distribute menu items evenly */
 }
+
 nav li {
-	display: inline;
-	padding: 0 1.5em;
-	border-right: 2px solid black;
-	font-weight: bold;
+    padding: 1em 2em; /* Increased padding for more space between items */
+    font-weight: bold;
 }
-nav a.current { color: #800000; }
-/* section styles */
+
+nav a {
+    text-decoration: none;
+    color: white; /* Text color */
+}
+
+nav a.current {
+    color: yellow; /* Highlight current page */
+}
+
+nav a:hover, nav a:focus {
+    font-style: italic;
+    color: #ffcc00;
+}
+
+/* Header Styling */
+header {
+    border-bottom: 3px solid #800000;
+    padding: 1.5em 0;
+    background: linear-gradient(30deg, #dba73f, #fffded, white, #fffded, #dba73f);
+}
+
+header h1 {
+    color: #800000;
+}
+
+header h2 {
+    font-style: italic;
+}
+
+header img {
+    float: left;
+    padding: 0 30px;
+    width: 80px; /* Consistent width */
+    height: 80px; /* Consistent height */
+}
+
+/* Article Layout (Left) */
+article {
+    width: 525px; /* Adjust width for article */
+    float: left;
+    padding: 0 20px;
+}
+
+article h1 {
+    color: black;
+}
+
+article img {
+    float: right;
+    margin: 1em 0 1em 1em;
+    border: 1px solid black;
+    width: 300px; /* Fixed width */
+    height: 230px; /* Fixed height */
+}
+
+/* Guest Speaker Section (Right) */
 section {
-	clear: left;
-	padding: 0 20px;
-	width: 525px;
-	float: right;
+    width: 525px; /* Match article width */
+    float: right; /* Float right to move it to the right */
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
+
 section h1 {
-	color: #800000;
-	font-size: 150%;
-	padding: .5em 0 .25em;
+    color: #800000;
+    font-size: 150%;
+    padding: .5em 0 .25em;
+}
 
-}
-section h2 {
-	font-size: 120%;
-	padding-bottom: .25em;
-}
 section p {
-	padding-bottom: .5em;
-}
-section blockquote {
-	padding: 0 2em;
-	font-style: italic;
-}
-section ul {
-	padding: 0 0 1.5em 1.25em;
-}
-section li {
-	padding-bottom: .35em;
+    padding-bottom: .5em;
 }
 
-article {
-	border-top: 5px solid #800000;	
-	border-bottom: 5px solid #800000;
+/* Add space below "Single Speaker $25" */
+.single-speaker {
+    margin-bottom: 20%; /* 20% space below */
 }
-article h1 {
-	color: black;
-}
-article img {
-	float: right;
-	margin: 1em 0 1em 1em;
-	border: 1px solid black;
-    width: 300px;
-    height: 230px;
-}
+
+/* Sidebar Styling */
 aside {
-	width: 215px;
-	float: right;
-	padding-left: 20px;
+    width: 215px;
+    float: right;
+    padding-left: 20px;
 }
+
 aside h1 {
-	color: #800000;
-	font-size: 150%;
-	padding: .5em 0 .25em;
+    color: #800000;
+    font-size: 150%;
+    padding: .5em 0 .25em;
 }
-aside h2 {
-	font-size: 120%;
-	padding-bottom: .25em;
-}
+
 aside img {
-	padding-bottom: 1em;
-    width: 80px;
-    height: 80px;
+    padding-bottom: 1em;
+    width: 80px; /* Consistent width for sidebar images */
+    height: 80px; /* Consistent height for sidebar images */
 }
 
+/* Footer Styling */
 footer {
-	border-top: 3px solid #800000;
-	clear: both;
-    background-color: #800000
-}
-footer p {
-	padding: 1em 0;
-	text-align: center;
+    border-top: 3px solid #800000;
+    background-color: #800000;
+    clear: both;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-body, section, aside {
-    min-height: 800px;
+footer p {
+    padding: 1em 0;
+    text-align: center;
+    color: white;
 }
