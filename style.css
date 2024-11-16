@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -30,22 +30,22 @@ nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex; /* Flexbox for horizontal alignment */
-    justify-content: space-between; /* Distribute menu items evenly */
+    display: flex; 
+    justify-content: space-between; 
 }
 
 nav li {
-    padding: 1em 2em; /* Increased padding for more space between items */
+    padding: 1em 2em; 
     font-weight: bold;
 }
 
 nav a {
     text-decoration: none;
-    color: white; /* Text color */
+    color: white; 
 }
 
 nav a.current {
-    color: yellow; /* Highlight current page */
+    color: yellow; 
 }
 
 nav a:hover, nav a:focus {
@@ -53,7 +53,7 @@ nav a:hover, nav a:focus {
     color: #ffcc00;
 }
 
-/* Header Styling */
+
 header {
     border-bottom: 3px solid #800000;
     padding: 1.5em 0;
@@ -71,13 +71,13 @@ header h2 {
 header img {
     float: left;
     padding: 0 30px;
-    width: 80px; /* Consistent width */
-    height: 80px; /* Consistent height */
+    width: 80px;
+    height: 80px; 
 }
 
-/* Article Layout (Left) */
+
 article {
-    width: 525px; /* Adjust width for article */
+    width: 525px; 
     float: left;
     padding: 0 20px;
 }
@@ -91,13 +91,13 @@ article img {
     margin: 1em 0 1em 1em;
     border: 1px solid black;
     width: 300px; /* Fixed width */
-    height: 230px; /* Fixed height */
+    height: 230px; 
 }
 
-/* Guest Speaker Section (Right) */
+
 section {
-    width: 525px; /* Match article width */
-    float: right; /* Float right to move it to the right */
+    width: 525px; 
+    float: right; 
     padding: 0 20px;
     display: flex;
     flex-direction: column;
@@ -114,12 +114,12 @@ section p {
     padding-bottom: .5em;
 }
 
-/* Add space below "Single Speaker $25" */
+/
 .single-speaker {
-    margin-bottom: 20%; /* 20% space below */
+    margin-bottom: 20%; 
 }
 
-/* Sidebar Styling */
+
 aside {
     width: 215px;
     float: right;
@@ -134,11 +134,10 @@ aside h1 {
 
 aside img {
     padding-bottom: 1em;
-    width: 80px; /* Consistent width for sidebar images */
-    height: 80px; /* Consistent height for sidebar images */
-}
+    width: 80px;
+    height: 80px; 
 
-/* Footer Styling */
+
 footer {
     border-top: 3px solid #800000;
     background-color: #800000;
